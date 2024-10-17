@@ -35,15 +35,16 @@
             <div class="form-group">
                 <label for="genero">Género:</label>
                 <select class="form-control" id="genero" name="genero" required>
-                <option value="">Selecciona un género</option>
-                    <option value="Acción">Acción</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Comedia">Comedia</option>
-                    <option value="Drama">Drama</option>
-                    <option value="Ciencia ficción">Ciencia Ficción</option>
-                    <option value="Terror">Terror</option>
+                    <option value="">Selecciona un género</option>
+                    <option value="Acción" {{ $pelicula->genero == 'Acción' ? 'selected' : '' }}>Acción</option>
+                    <option value="Romance" {{ $pelicula->genero == 'Romance' ? 'selected' : '' }}>Romance</option>
+                    <option value="Comedia" {{ $pelicula->genero == 'Comedia' ? 'selected' : '' }}>Comedia</option>
+                    <option value="Drama" {{ $pelicula->genero == 'Drama' ? 'selected' : '' }}>Drama</option>
+                    <option value="Ciencia ficción" {{ $pelicula->genero == 'Ciencia ficción' ? 'selected' : '' }}>Ciencia Ficción</option>
+                    <option value="Terror" {{ $pelicula->genero == 'Terror' ? 'selected' : '' }}>Terror</option>
                 </select>
             </div>
+
 
             <div class="form-group">
                 <label for="animacion">Tipo de Animación:</label>
